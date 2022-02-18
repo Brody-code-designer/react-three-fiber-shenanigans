@@ -1,7 +1,7 @@
 import { useThree } from "@react-three/fiber";
 import React from "react";
 
-export const SpecialCube = ({position}) => {
+export const ReusedCube = ({position, box, red}) => {
 
   const {camera} = useThree
 
@@ -9,10 +9,7 @@ export const SpecialCube = ({position}) => {
 
   return (
     <>
-      <mesh scale={10} position={position}>
-        <boxGeometry args={[1, 1, 1]} />
-        <meshStandardMaterial color={"blue"} />
-      </mesh>
+      <mesh scale={10} position={position} geometry={box} material={red} />
     </>
   );
 };
