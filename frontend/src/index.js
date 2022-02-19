@@ -5,7 +5,7 @@ import App from "./App";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Canvas01 } from "./playground/canvas/Canvas01-ReUsingMesh";
 import { Canvas02 } from "./playground/canvas/Canvas02-Instancing";
-import { Canvas03 } from "./playground/canvas/Canvas-03-Suspense";
+import { Canvas03 } from "./playground/canvas/Canvas03-Suspense";
 
 ReactDOM.render(
   <BrowserRouter>
