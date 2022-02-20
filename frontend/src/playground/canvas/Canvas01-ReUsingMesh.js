@@ -1,6 +1,6 @@
 import React from "react";
 import { Canvas } from "@react-three/fiber";
-import { ReusedCube } from "../Objects/SpecialCube";
+import { ReusedCube } from "../Objects/ReusedCube";
 import { OrbitControls } from "@react-three/drei";
 import "./canvas-01.css";
 import * as THREE from "three";

@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import React, { useState } from "react";
 import "./canvas-01.css";
-import { OrbitControls, Stats } from "@react-three/drei";
+import { OrbitControls, Stars, Stats } from "@react-three/drei";
 import { GUI } from "../Objects/GUI";
 
 /**
@@ -13,11 +13,12 @@ export const Canvas04 = () => {
   
   return (
     <>
-    <button onClick={() => setActive(!active)}>Increase Scale</button>
+    <button className="buttonOverlay1" onClick={() => setActive(!active)}>Increase Scale</button>
       <Canvas>
         <ambientLight />
         <OrbitControls />
         <GUI active={active} />
+        <Stars />
       </Canvas>
     </>
   );

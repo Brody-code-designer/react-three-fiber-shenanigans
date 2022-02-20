@@ -3,6 +3,10 @@ import { Canvas } from "@react-three/fiber";
 import React, { useState } from "react";
 import { CameraAnimated } from "../cameras/CameraAnimated";
 
+/**
+ * This canvas animates a camera to look at a square as it moves
+ */
+
 export const Canvas06 = () => {
    
   const [active, setActive] = useState(false)
@@ -10,7 +14,10 @@ export const Canvas06 = () => {
 
     return (
     <>
-    <button onClick={() => setActive(!active)}>Click to Animate Camera to look at box</button>
+    <button 
+    onClick={() => setActive(!active)}
+    className="buttonOverlay1"
+    >Click to Animate Camera to look at box</button>
       <Canvas>
           <ambientLight />
           <CameraAnimated active={active} />
