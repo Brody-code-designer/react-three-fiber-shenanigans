@@ -12,6 +12,7 @@ import { Canvas06 } from "./playground/canvas/Canvas06-CameraAnimate";
 import { Canvas07 } from "./playground/canvas/Canvas07-PointerLockControls";
 import { Canvas08 } from "./playground/vr-canvas/Canvas08-VR";
 import { Canvas09 } from "./playground/canvas/Canvas09-ImportModels";
+import { Canvas10 } from "./playground/canvas/Canvas10-Textures";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -26,6 +27,7 @@ ReactDOM.render(
       <Route path="/Canvas07" element={<Canvas07 />} />
       <Route path="/Canvas08" element={<Canvas08 />} />
       <Route path="/Canvas09" element={<Canvas09 />} />
+      <Route path="/Canvas10" element={<Canvas10 />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
