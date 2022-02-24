@@ -13,6 +13,7 @@ import { Canvas07 } from "./playground/canvas/Canvas07-PointerLockControls";
 import { Canvas08 } from "./playground/vr-canvas/Canvas08-VR";
 import { Canvas09 } from "./playground/canvas/Canvas09-ImportModels";
 import { Canvas10 } from "./playground/canvas/Canvas10-Textures";
+import { Canvas11 } from "./playground/canvas/Canvas11-OrbitControlls-Following";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -28,6 +29,7 @@ ReactDOM.render(
       <Route path="/Canvas08" element={<Canvas08 />} />
       <Route path="/Canvas09" element={<Canvas09 />} />
       <Route path="/Canvas10" element={<Canvas10 />} />
+      <Route path="/Canvas11" element={<Canvas11 />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
