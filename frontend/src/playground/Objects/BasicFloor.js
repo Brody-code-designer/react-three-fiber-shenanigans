@@ -15,7 +15,7 @@ export const BasicFloor = () => {
   return (
     <>
       <mesh rotation={[Math.PI / 2, Math.PI, Math.PI]}>
-        <planeBufferGeometry args={[1000, 1000]} />
+        <planeBufferGeometry args={[100, 100]} />
         <meshStandardMaterial map={texture} />
       </mesh>
     </>
