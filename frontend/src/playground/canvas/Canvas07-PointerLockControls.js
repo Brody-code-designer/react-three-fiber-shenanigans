@@ -2,10 +2,9 @@ import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import React, { useState } from "react";
 import { CameraPointerLockControls } from "../cameras/CameraPointerLockControls";
+import { PointerLockTarget } from "../pointers/PointerLockTarget";
 import "./canvas-01.css";
-import "./canvas-pointerLock.css";
-import { BiTargetLock } from "react-icons/bi";
-import { IconContext } from "react-icons/lib";
+
 
 /**
  * This canvas creates pointer lock controls that lock the cursor. In order for the target to be set in the middle of the screen a raycaster is set on the canvas
@@ -15,9 +14,9 @@ export const Canvas07 = () => {
 
   return (
     <>
-      <IconContext.Provider value={ {color: active ? "magenta" : "black", className: "target" } }>
-        <BiTargetLock  />
-      </IconContext.Provider>
+      
+      <PointerLockTarget active={active} />
+
       <Canvas
       raycaster={{
         computeOffsets: (_, {size: {width, height}}) => {

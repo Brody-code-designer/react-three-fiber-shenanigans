@@ -5,6 +5,7 @@ import { useKeyboardControls } from "../../hooks/useKeyboardControls";
 import * as THREE from "three";
 import { CameraPointerLockControls } from "../cameras/CameraPointerLockControls";
 
+
 export const MovingPlayer = () => {
   const { moveForward, moveBackward, moveRight, moveLeft } =
     useKeyboardControls();
@@ -51,6 +52,7 @@ export const MovingPlayer = () => {
   return (
     <>
       <CameraPointerLockControls />
+      
       <group ref={ref} />
     </>
   );
