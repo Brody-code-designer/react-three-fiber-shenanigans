@@ -16,11 +16,11 @@ export const Canvas18 = () => {
         <OrbitControls />
         <Stars />
           <Suspense fallback={null}>
-          <Physics>
-            <Debug color="black" scale={1.1}>
+          <Physics gravity={[0, -10, 0]}>
+            {/* <Debug color="black" scale={1.1}> */}
               <Room />
               <ThirdPersonMovingPlayer walking={walking} />
-            </Debug>
+            {/* </Debug> */}
           </Physics>
         </Suspense>
       </Canvas>
