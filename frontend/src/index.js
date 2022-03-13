@@ -17,6 +17,8 @@ import { Canvas11 } from "./playground/canvas/Canvas11-OrbitControlls-Following"
 import { Canvas13 } from "./playground/canvas/Canvas13-Room";
 import { Canvas14 } from "./playground/canvas/Canvas14-MovingPlayer";
 import { Canvas15 } from "./playground/canvas/Canvas15-Video";
+import { Canvas17 } from "./playground/canvas/Canvas17-3rdPersonCamera";
+import { Canvas16 } from "./playground/canvas/Canvas16-HTML";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -36,6 +38,8 @@ ReactDOM.render(
       <Route path="/Canvas13" element={<Canvas13 />} />
       <Route path="/Canvas14" element={<Canvas14 />} />
       <Route path="/Canvas15" element={<Canvas15 />} />
+      <Route path="/Canvas16" element={<Canvas16 />} />
+      <Route path="/Canvas17" element={<Canvas17 />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
