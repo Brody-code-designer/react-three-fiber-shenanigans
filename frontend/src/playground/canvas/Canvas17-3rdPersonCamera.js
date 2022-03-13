@@ -6,6 +6,9 @@ import { Room } from "../Objects/Room/Room";
 import { ThirdPersonMovingPlayer } from "../player/ThirdPersonMovingPlayer";
 
 export const Canvas17 = () => {
+
+  let walking = false
+
   return (
     <>
       <Canvas>
@@ -16,7 +19,7 @@ export const Canvas17 = () => {
           <Physics>
             <Debug color="black" scale={1.1}>
               <Room />
-              <ThirdPersonMovingPlayer />
+              <ThirdPersonMovingPlayer walking={walking} />
             </Debug>
           </Physics>
         </Suspense>

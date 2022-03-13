@@ -5,8 +5,9 @@ import { useKeyboardControls } from "../../hooks/useKeyboardControls";
 import * as THREE from "three";
 import { OrbitControls } from "@react-three/drei";
 import { Vector3 } from "three";
+import Ninja from "../3D-Components/Ninja";
 
-export const ThirdPersonMovingPlayer = () => {
+export const ThirdPersonMovingPlayer = ({ walking }) => {
   const { moveForward, moveBackward, moveRight, moveLeft } =
     useKeyboardControls();
 
@@ -67,7 +68,15 @@ export const ThirdPersonMovingPlayer = () => {
         enablePan={false}
         enableZoom={false}
       />
-      <group ref={ref} />
+      {walking === false ? (
+        <group ref={ref} />
+      ) : (
+        <>
+          <group ref={ref}>
+            <Ninja />
+          </group>
+        </>
+      )}
     </>
   );
 };
